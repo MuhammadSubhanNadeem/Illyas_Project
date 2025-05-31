@@ -197,9 +197,9 @@ signupRouter.post("/signup_auth", async (req, res) => {
   try {
     res.setHeader("Content-Type", "application/json");
     // console.log(req?.body, req?.session?.OTP);
-    console.log(req.session.OTP.expiry > Date.now());
-    console.log(req.session.OTP.expiry);
-    if (req.session.OTP.expiry > Date.now()) {
+    // console.log(req.session.OTP.expiry > Date.now());
+    // console.log(req.session.OTP.expiry);
+    if (req.session.OTP && req.session.OTP.expiry > Date.now()) {
       let userOtp = parseInt(req.body.userOtp, 10);
       let serverOtp = req.session.OTP.otpCode;
       if (userOtp === serverOtp) {
