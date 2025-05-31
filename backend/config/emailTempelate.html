@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Verification</title>
+    <style>
+        @font-face {
+            font-family: Lato;
+            src: url(../assets/fonts/lato/Lato-Regular.ttf);
+        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Lato;
+      }
+      html,
+      body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .emailTopImg {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+      }
+      .topImgCover {
+        position: relative;
+        width: 80%;
+        height: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+      }
+      .emailContextCover {
+        width: 80%;
+        height: calc(320px - 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .emailContextCover p{
+        color: rgba(0, 0, 0, 0.65);
+      }
+      .emailHeading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: orange;
+        font-size: 36px;
+        text-align: center;
+        align-content: center;
+        background: rgba(0, 0, 0, 0.25);
+      }
+      .code_box{
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 20px;
+      }
+      .otp{
+        color: orange;
+        font-size: 22px;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="topImgCover">
+        <img
+          src="../assets/images/hero_1.webp"
+          class="emailTopImg"
+          alt="Workers"
+        />
+        <h1 class="emailHeading">Email Verification</h1>
+      </div>
+      <div class="emailContextCover">
+        <p>Copy the Code which give below and write on website email verification Code Section.</p>
+        <h1 class="code_box">CODE: <strong class="otp">51724</strong></h1>
+      </div>
+    </main>
+  </body>
+</html>

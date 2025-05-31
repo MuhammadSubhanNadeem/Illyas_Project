@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@theme theme {
+  --color-main_website_color_1: rgb(27, 37, 41);
+  --color-main_website_color_2: rgb(24, 30, 33);
+  /* --color-top_nav_second_color: rgb(255, 166, 0); */
+  --color-top_nav_second_color: rgb(209, 222, 223);
+  --font-font_family_lato: Lato;
+  --font-font_family_br: Brilliant;
+}
+.signup_inputs_class {
+  @apply relative w-full h-[40px] min-w-[280px] max-w-[380px] pl-[15px] text-[16px] rounded-[7px] bg-main_website_color_2 border-[2px] border-[rgba(112,111,110,0.47)] text-white outline-none transition-all duration-150 ease-in focus:border-[2px] focus:border-top_nav_second_color;
+}
+/* tailwind Unaplayed css */
+.user_profession::-webkit-calendar-picker-indicator {
+  display: none;
+}
+@utility no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
